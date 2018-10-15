@@ -38,14 +38,14 @@ def solution(A):
     return missing_element    
 
 def solution2(A):
-    lenTotal = Int((len(A) + 1 * len(A) + 2) / 2)
-    arrayTotal = 0;
+    lengthSum = math.ceil((((len(A) + 1) * (len(A) + 2)) / 2))
+    arraySum = 0;
     for idx, value in enumerate(A):
-        arrayTotal += value;
-    print(lenTotal, arrayTotal);            
+        arraySum += value;
+    return lengthSum - arraySum;
 
-testlist    =   [2,3,1,5];
-solution2(testlist);
+testlist    =   [2,3,1,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,20];
+print(solution2(testlist));
 
 
 
