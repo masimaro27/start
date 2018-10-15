@@ -1,3 +1,6 @@
+
+# 100%
+
 import math
 
 def quick(array):
